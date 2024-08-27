@@ -28,7 +28,8 @@ The main goal of this project is to create a reliable and efficient tool that al
 - **Real-Time Data**: Scrapes live and dynamically loaded content from the diretta.it website, ensuring that the data is current.
 - **Error Handling**: Robust error handling mechanisms to manage potential issues during scraping, such as missing elements or network interruptions.
 
-### 🛠️Tools
+### 🔨Tools
+
 - [**Python**](https://www.python.org/): The primary programming language for scripting and automation;
 - [**Selenium**](https://selenium-python.readthedocs.io/): A powerful web scraping library used to interact with web pages and extract data dynamically;
 - [**Tkinter**](https://docs.python.org/3/library/tkinter.html): A standard Python interface to the Tk GUI toolkit, used to create a simple and intuitive user interface;
@@ -62,12 +63,12 @@ soccer_tournament_scraper/
 4. **Display Data in GUI**: The scraped data is displayed in a table format within the Tkinter GUI, allowing users to view the data directly in the application;
 5. **Export Data to CSV**: Users can export the scraped data to a .csv file for further use. This functionality is particularly useful for analysts and enthusiasts who want to work with the data offline or integrate it into other tools.
 
-### 🖥️User Interface
+### 💻User Interface
 The GUI is built using `Tkinter` and provides a simple interface for users to interact with:
 - `Dropdown Menu`: Allows users to select the tournament they are interested in;
 - `Scrape and Export Button`: Triggers the scraping process, displays the results in the GUI and automatically download the scraped data to a .csv file.
 
-### 🛡️Error Handling and Robustness
+### Error Handling and Robustness
 The scraper is equipped with several error-handling features to ensure smooth operation:
 - **Element Locating Errors**: Try-except blocks are used to manage exceptions if specific elements are not found on the page.
 - **Network Issues**: The scraper includes retries and timeout handling to manage network-related issues.
