@@ -9,6 +9,7 @@
 - [How it works](#how-it-works)
 - [User Interface](#user-interface)
 - [Error Handling and Robustness](#error-handling-and-robustness)
+- [Future Enhancements](#future-enhancements)
 
 ### Project Overview
 This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from [diretta.it](https://www.diretta.it/preferiti/), a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
