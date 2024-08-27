@@ -47,8 +47,7 @@ soccer_tournament_scraper/
 ├── webscrape_diretta_tutorial.ipynb               # A jupyter notebook to illustrate how the core script works
 ├── webscrape_diretta_gui.ipynb                    # A jupyter notebook to illustrate how the GUI core script works
 ├── webscrape_diretta_gui.py                       # Script to launch the Tkinter GUI
-├── data/                                          # Directory to store exported CSV files
-│   └── standings.csv                          # Example of exported CSV file
+├── standings.csv                                  # Example of exported CSV file        
 ├── chromedriver-win64/                            # Directory containing ChromeDriver executable
  │   └── chromedriver.exe                          # ChromeDriver executable
 ```
