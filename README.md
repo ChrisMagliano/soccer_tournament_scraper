@@ -47,12 +47,12 @@ soccer_tournament_scraper/
 ├── requirements.txt                               # Required libraries and dependencies
 ├── webscrape_diretta_tutorial.ipynb               # A jupyter notebook to illustrate how the core script works
 ├── webscrape_diretta_gui.ipynb                    # A jupyter notebook to illustrate how the GUI core script works
-├── webscrape.py                       # Script to launch the Tkinter GUI
+├── webscrape.py                                   # Script to launch the Tkinter GUI
 ├── standings.csv                                  # Example of exported CSV file        
 ├── chromedriver-win64/                            # Directory containing ChromeDriver executable
  │   └── chromedriver.exe                          # ChromeDriver executable
- │   └── LICENSE.chromedriver                          # ChromeDriver executable
- │   └── THIRD_PARTY_NOTICES.chromedriver                          # ChromeDriver executable
+ │   └── LICENSE.chromedriver                      
+ │   └── THIRD_PARTY_NOTICES.chromedriver          
 ```
 **Warning** the chromedriver.exe is compatible with 128.0.6613.85 (64 bit) Chrome version. To properly run the script on your machine please assure this chromedriver.exe is compatible with your Chrome version. If not give a look at the following [webpage](https://getwebdriver.com/).
 
