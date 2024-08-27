@@ -64,13 +64,11 @@ soccer_tournament_scraper/
 
 ### 🖥️User Interface
 The GUI is built using `Tkinter` and provides a simple interface for users to interact with:
-
-- `Dropdown Menu`: Allows users to select the tournament they are interested in.
+- `Dropdown Menu`: Allows users to select the tournament they are interested in;
 - `Scrape and Export Button`: Triggers the scraping process, displays the results in the GUI and automatically download the scraped data to a .csv file.
 
 ### 🛡️Error Handling and Robustness
 The scraper is equipped with several error-handling features to ensure smooth operation:
-
 - **Element Locating Errors**: Try-except blocks are used to manage exceptions if specific elements are not found on the page.
 - **Network Issues**: The scraper includes retries and timeout handling to manage network-related issues.
 - **Dynamic Content Handling**: Selenium waits for content to load dynamically, ensuring that JavaScript-rendered elements are fully loaded before attempting to scrape.
