@@ -2,30 +2,30 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Data Sources](#data-sources)
+- [Features](#features)
 - [Tools](#tools)
-- [Data Cleaning & Preparation](#data-cleaning-and-preparation)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Results and findings](#results-and-findings)
-- [Recommendations and Insights](#recommendations-and-insights)
-- [Limitations](#limitations)
+- [Project goals](#project-goals)
+- [Project structure](#project-structure)
+- [How it works](#how-it-works)
+- [User interface](#user-interface)
+- [Error Handling and Robustness](#error-handling-and-robustness)
 - [References](#references)
 
 ### Project Overview
 This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from diretta.it, a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
  
 ### 🚀 Features
-- Dynamic Web Scraping: Utilizes Selenium to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
-- User-Friendly GUI: Built with Tkinter to allow users to easily select a tournament and view the corresponding standings in a table format.
-- Data Export: Provides functionality to export the scraped data into a CSV file for further analysis or record-keeping.
-- Real-Time Data: Scrapes live and dynamically loaded content from the diretta.it website, ensuring that the data is current.
-- Error Handling: Robust error handling mechanisms to manage potential issues during scraping, such as missing elements or network interruptions.
+- **Dynamic Web Scraping**: Utilizes Selenium to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
+- **User-Friendly GUI**: Built with Tkinter to allow users to easily select a tournament and view the corresponding standings in a table format.
+- **Data Export**: Provides functionality to export the scraped data into a CSV file for further analysis or record-keeping.
+- **Real-Time Data**: Scrapes live and dynamically loaded content from the diretta.it website, ensuring that the data is current.
+- **Error Handling**: Robust error handling mechanisms to manage potential issues during scraping, such as missing elements or network interruptions.
 
-### 🛠️ Technologies Used
-- Python: The primary programming language for scripting and automation.
-- Selenium: A powerful web scraping library used to interact with web pages and extract data dynamically.
-- Tkinter: A standard Python interface to the Tk GUI toolkit, used to create a simple and intuitive user interface.
-- Pandas: A data manipulation library used to structure and format scraped data for easy analysis and export.
+### 🛠️ Tools
+- **Python**: The primary programming language for scripting and automation.
+- **Selenium**: A powerful web scraping library used to interact with web pages and extract data dynamically.
+- **Tkinter**: A standard Python interface to the Tk GUI toolkit, used to create a simple and intuitive user interface.
+- **Pandas**: A data manipulation library used to structure and format scraped data for easy analysis and export.
 - ChromeDriver: A WebDriver used to automate and control Chrome browsers.
 
 ### 🎯 Project Goals
@@ -35,8 +35,9 @@ The main goal of this project is to create a reliable and efficient tool that al
 - View the scraped data in a neatly formatted table within the application.
 - Export the data for further analysis, reporting, or integration into other projects.
 ### 📚 Project Structure
-graphql
-Copia codice
+The project is organized into the following structure:
+
+```plaintext
 soccer-tournament-scraper/
 │
 ├── README.md                # Project description and instructions
@@ -44,7 +45,13 @@ soccer-tournament-scraper/
 ├── scraper.py               # Main script to run the web scraping
 ├── gui.py                   # Script to launch the Tkinter GUI
 ├── data/                    # Directory to store exported CSV files
-└── chromedriver/            # Directory containing ChromeDriver executable
+│   └── sample_output.csv    # Example of exported CSV file
+├── chromedriver/            # Directory containing ChromeDriver executable
+│   └── chromedriver.exe     # ChromeDriver executable
+└── images/                  # Directory for storing images
+    └── gui_screenshot.png   # Screenshot of the GUI for README
+```
+
 ### 📋 How It Works
 - Initialize WebDriver: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on diretta.it.
 - Navigate to Tournament Page: Once the tournament is selected via the GUI, Selenium directs the browser to the appropriate URL.
