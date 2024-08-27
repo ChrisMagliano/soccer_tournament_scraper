@@ -15,7 +15,7 @@
 This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from diretta.it, a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
  
 ### 🚀 Features
-- **Dynamic Web Scraping**: Utilizes Selenium to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
+- **Dynamic Web Scraping**: Utilizes `selenium` to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
 - **User-Friendly GUI**: Built with Tkinter to allow users to easily select a tournament and view the corresponding standings in a table format.
 - **Data Export**: Provides functionality to export the scraped data into a CSV file for further analysis or record-keeping.
 - **Real-Time Data**: Scrapes live and dynamically loaded content from the diretta.it website, ensuring that the data is current.
@@ -23,10 +23,10 @@ This project is a web scraping tool developed using Python's Selenium library to
 
 ### 🛠️ Tools
 - **Python**: The primary programming language for scripting and automation.
-- **Selenium**: A powerful web scraping library used to interact with web pages and extract data dynamically.
+- [**Selenium**](https://selenium-python.readthedocs.io/): A powerful web scraping library used to interact with web pages and extract data dynamically.
 - **Tkinter**: A standard Python interface to the Tk GUI toolkit, used to create a simple and intuitive user interface.
 - **Pandas**: A data manipulation library used to structure and format scraped data for easy analysis and export.
-- ChromeDriver: A WebDriver used to automate and control Chrome browsers.
+- **ChromeDriver**: A WebDriver used to automate and control Chrome browsers.
 
 ### 🎯 Project Goals
 The main goal of this project is to create a reliable and efficient tool that allows users to:
