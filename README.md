@@ -50,8 +50,10 @@ soccer_tournament_scraper/
 ├── standings.csv                                  # Example of exported CSV file        
 ├── chromedriver-win64/                            # Directory containing ChromeDriver executable
  │   └── chromedriver.exe                          # ChromeDriver executable
+ │   └── LICENSE.chromedriver                          # ChromeDriver executable
+ │   └── THIRD_PARTY_NOTICES.chromedriver                          # ChromeDriver executable
 ```
-
+**Warning** the chromedriver.exe is compatible with 128.0.6613.85 (64 bit) Chrome version. To properly run the script on your machine please assure this chromedriver.exe is compatible with your Chrome version. If not give a look at the following [webpage](https://getwebdriver.com/).
 ### 📋How It Works
 1. **Initialize WebDriver**: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on diretta.it;
 2. **Navigate to Tournament Page**: Once the tournament is selected via the GUI, Selenium directs the browser to the appropriate URL;
