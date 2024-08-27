@@ -7,7 +7,7 @@
 - [Tools](#tools)
 - [Project structure](#project-structure)
 - [How it works](#how-it-works)
-- [User interface](#user-interface)
+- [User Interface](#user-interface)
 - [Error Handling and Robustness](#error-handling-and-robustness)
 
 ### Project Overview
@@ -19,7 +19,7 @@ The main goal of this project is to create a reliable and efficient tool that al
 - Automatically access and scrape soccer tournament standings from diretta.it;
 - View the scraped data in a neatly formatted table within the application;
 - Export the data for further analysis, reporting, or integration into other projects.
-- 
+ 
 ### 🚀Features
 - **Dynamic Web Scraping**: Utilizes `selenium` to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
 - **User-Friendly GUI**: Built with `Tkinter` to allow users to easily select a tournament and view the corresponding standings in a table format.
