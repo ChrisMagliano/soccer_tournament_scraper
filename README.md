@@ -14,7 +14,7 @@
 ### Project Overview
 This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from diretta.it, a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
  
-### 🚀 Features
+### 🚀Features
 - **Dynamic Web Scraping**: Utilizes `selenium` to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
 - **User-Friendly GUI**: Built with Tkinter to allow users to easily select a tournament and view the corresponding standings in a table format.
 - **Data Export**: Provides functionality to export the scraped data into a CSV file for further analysis or record-keeping.
