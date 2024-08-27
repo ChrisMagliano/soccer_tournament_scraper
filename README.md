@@ -12,7 +12,7 @@
 - [References](#references)
 
 ### Project Overview
-This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from diretta.it, a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
+This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from [diretta.it](https://www.diretta.it/preferiti/), a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
  
 ### 🚀Features
 - **Dynamic Web Scraping**: Utilizes `selenium` to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
@@ -38,24 +38,25 @@ The main goal of this project is to create a reliable and efficient tool that al
 The project is organized into the following structure:
 
 ```plaintext
-soccer-tournament-scraper/
+soccer_tournament_scraper/
 │
 ├── README.md                                      # Project description and instructions
 ├── requirements.txt                               # Required libraries and dependencies
-├── webscrape_diretta_tutorial.ipynb               # Main script to run the web scraping
-├── gui.py                                         # Script to launch the Tkinter GUI
+├── webscrape_diretta_tutorial.ipynb               # A jupyter notebook to illustrate how the core script works
+├── webscrape_diretta_gui.ipynb                    # A jupyter notebook to illustrate how the GUI core script works
+├── webscrape_diretta_gui.py                       # Script to launch the Tkinter GUI
 ├── data/                                          # Directory to store exported CSV files
-│   └── sample_output.csv                          # Example of exported CSV file
+│   └── standings.csv                          # Example of exported CSV file
 ├── chromedriver-win64/                            # Directory containing ChromeDriver executable
  │   └── chromedriver.exe                          # ChromeDriver executable
 ```
 
 ### 📋How It Works
-- Initialize WebDriver: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on diretta.it.
-- Navigate to Tournament Page: Once the tournament is selected via the GUI, Selenium directs the browser to the appropriate URL.
-- Scrape Standings Data: Selenium locates the standings table on the webpage and extracts relevant information, such as team positions, points, wins, losses, draws, goals scored and conceded, and recent match results.
-- Display Data in GUI: The scraped data is displayed in a table format within the Tkinter GUI, allowing users to view the data directly in the application.
-- Export Data to CSV: Users can export the scraped data to a CSV file for further use. This functionality is particularly useful for analysts and enthusiasts who want to work with the data offline or integrate it into other tools.
+1. Initialize WebDriver: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on diretta.it;
+2. Navigate to Tournament Page: Once the tournament is selected via the GUI, Selenium directs the browser to the appropriate URL;
+3. Scrape Standings Data: Selenium locates the standings table on the webpage and extracts relevant information, such as team positions, points, wins, losses, draws, goals scored and conceded, and recent match results;
+4. Display Data in GUI: The scraped data is displayed in a table format within the Tkinter GUI, allowing users to view the data directly in the application;
+5. Export Data to CSV: Users can export the scraped data to a CSV file for further use. This functionality is particularly useful for analysts and enthusiasts who want to work with the data offline or integrate it into other tools.
 ### 🖥️User Interface
 The GUI is built using Tkinter and provides a simple interface for users to interact with:
 
