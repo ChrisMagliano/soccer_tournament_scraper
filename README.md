@@ -17,8 +17,8 @@ This project is a web scraping tool developed using Python's Selenium library to
 ### 🎯Project Goals
 The main goal of this project is to create a reliable and efficient tool that allows users to:
 
-- Automatically access and scrape soccer tournament standings from diretta.it.
-- View the scraped data in a neatly formatted table within the application.
+- Automatically access and scrape soccer tournament standings from diretta.it;
+- View the scraped data in a neatly formatted table within the application;
 - Export the data for further analysis, reporting, or integration into other projects.
 - 
 ### 🚀Features
