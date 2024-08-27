@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Features](#features)
+- [Features](#🚀-features)
 - [Tools](#tools)
 - [Project goals](#project-goals)
 - [Project structure](#project-structure)
