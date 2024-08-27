@@ -46,7 +46,7 @@ soccer_tournament_scraper/
 ├── requirements.txt                               # Required libraries and dependencies
 ├── webscrape_diretta_tutorial.ipynb               # A jupyter notebook to illustrate how the core script works
 ├── webscrape_diretta_gui.ipynb                    # A jupyter notebook to illustrate how the GUI core script works
-├── webscrape_diretta_gui.py                       # Script to launch the Tkinter GUI
+├── webscrape.py                       # Script to launch the Tkinter GUI
 ├── standings.csv                                  # Example of exported CSV file        
 ├── chromedriver-win64/                            # Directory containing ChromeDriver executable
  │   └── chromedriver.exe                          # ChromeDriver executable
