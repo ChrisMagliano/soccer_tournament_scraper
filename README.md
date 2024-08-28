@@ -1,4 +1,4 @@
-# 🏆 Soccer Tournament Scraper: Web Scraping Project for diretta.it
+# 🏆 Soccer Tournament Scraper: Web Scraping Project for livescore.it
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -12,12 +12,12 @@
 - [Future Enhancements](#future-enhancements)
 
 ### Project Overview
-This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from [diretta.it](https://www.diretta.it/preferiti/), a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
+This project is a web scraping tool developed using Python's Selenium library to extract soccer tournament standings from [livescore.com](https://www.livescore.com/en/) a popular website for live soccer scores and statistics. The tool enables users to select a specific tournament, such as the Premier League, Serie A, or La Liga, and automatically scrape the latest standings data for the selected tournament.
 
 ### 🎯Project Goals
 The main goal of this project is to create a reliable and efficient tool that allows users to:
 
-- Automatically access and scrape soccer tournament standings from diretta.it;
+- Automatically access and scrape soccer tournament standings from LiveScore;
 - View the scraped data in a neatly formatted table within the application;
 - Export the data for further analysis, reporting, or integration into other projects.
  
@@ -25,7 +25,7 @@ The main goal of this project is to create a reliable and efficient tool that al
 - **Dynamic Web Scraping**: Utilizes `selenium` to handle JavaScript-heavy content, ensuring that the most accurate and up-to-date data is captured.
 - **User-Friendly GUI**: Built with `Tkinter` to allow users to easily select a tournament and view the corresponding standings in a table format.
 - **Data Export**: Provides functionality to export the scraped data into a CSV file for further analysis or record-keeping.
-- **Real-Time Data**: Scrapes live and dynamically loaded content from the diretta.it website, ensuring that the data is current.
+- **Real-Time Data**: Scrapes live and dynamically loaded content from LiveScore, ensuring that the data is current.
 - **Error Handling**: Robust error handling mechanisms to manage potential issues during scraping, such as missing elements or network interruptions.
 
 ### 🔨Tools
@@ -44,11 +44,10 @@ The project is organized into the following structure:
 soccer_tournament_scraper/
 │
 ├── README.md                                      # Project description and instructions
-├── requirements.txt                               # Required libraries and dependencies
-├── webscrape_diretta_tutorial.ipynb               # A jupyter notebook to illustrate how the core script works
-├── webscrape_diretta_gui.ipynb                    # A jupyter notebook to illustrate how the GUI core script works
+├── webscrape_livescore_tutorial.ipynb             # A jupyter notebook to illustrate how the core script works
+├── webscrape_livescore_gui.ipynb                  # A jupyter notebook to illustrate how the GUI core script works
 ├── webscrape.py                                   # Script to launch the Tkinter GUI
-├── standings.csv                                  # Example of exported CSV file        
+├── standings_livescore.csv                        # Example of exported CSV file        
 ├── chromedriver-win64/                            # Directory containing ChromeDriver executable
  │   └── chromedriver.exe                          # ChromeDriver executable
  │   └── LICENSE.chromedriver                      
@@ -57,7 +56,7 @@ soccer_tournament_scraper/
 **WARNING**: the chromedriver.exe is compatible with 128.0.6613.85 (64 bit) Chrome version. To properly run the script on your machine please assure this chromedriver.exe is compatible with your Chrome version. If not give a look at the following [webpage](https://getwebdriver.com/).
 
 ### 📋How It Works
-1. **Initialize WebDriver**: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on diretta.it;
+1. **Initialize WebDriver**: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on livescore.com;
 2. **Navigate to Tournament Page**: Once the tournament is selected via the GUI, Selenium directs the browser to the appropriate URL;
 3. **Scrape Standings Data**: Selenium locates the standings table on the webpage and extracts relevant information, such as team positions, points, wins, losses, draws, goals scored and conceded, and recent match results;
 4. **Display Data in GUI**: The scraped data is displayed in a table format within the Tkinter GUI, allowing users to view the data directly in the application;
@@ -75,6 +74,6 @@ The scraper is equipped with several error-handling features to ensure smooth op
 - **Dynamic Content Handling**: Selenium waits for content to load dynamically, ensuring that JavaScript-rendered elements are fully loaded before attempting to scrape.
 
 ### 📈Future Enhancements
-- **Add More Leagues**: Extend the tool to scrape additional leagues or sports available on diretta.it.
+- **Add More Leagues**: Extend the tool to scrape additional leagues or sports available on livescore.com.
 - **Advanced Data Analysis**: Integrate additional Python libraries (e.g., Matplotlib, Seaborn) to provide visual data analysis directly in the GUI.
 - **User Authentication**: Add features to handle user logins and save personalized settings.
