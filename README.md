@@ -74,11 +74,11 @@ The GUI is built using `Tkinter` and provides a simple interface for users to in
 
 ### Error Handling and Robustness
 The scraper is equipped with several error-handling features to ensure smooth operation:
-- **Element Locating Errors**: Try-except blocks are used to manage exceptions if specific elements are not found on the page.
-- **Network Issues**: The scraper includes retries and timeout handling to manage network-related issues.
+- **Element Locating Errors**: Try-except blocks are used to manage exceptions if specific elements are not found on the page;
+- **Network Issues**: The scraper includes retries and timeout handling to manage network-related issues;
 - **Dynamic Content Handling**: Selenium waits for content to load dynamically, ensuring that JavaScript-rendered elements are fully loaded before attempting to scrape.
 
 ### 📈Future Enhancements
-- **Add More Leagues**: Extend the tool to scrape additional leagues or sports available on livescore.com.
-- **Advanced Data Analysis**: Integrate additional Python libraries (e.g., Matplotlib, Seaborn) to provide visual data analysis directly in the GUI.
+- **Add More Leagues**: Extend the tool to scrape additional leagues or sports available on livescore.com;
+- **Advanced Data Analysis**: Integrate additional Python libraries (e.g., Matplotlib, Seaborn) to provide visual data analysis directly in the GUI;
 - **User Authentication**: Add features to handle user logins and save personalized settings.
