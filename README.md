@@ -56,7 +56,9 @@ soccer_tournament_scraper/
 **WARNING**: the chromedriver.exe is compatible with 128.0.6613.85 (64 bit) Chrome version. To properly run the script on your machine please assure this chromedriver.exe is compatible with your Chrome version. If not give a look at the following [webpage](https://getwebdriver.com/).
 
 ### 📋How It Works
-1. **Initialize WebDriver**: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on livescore.com; ![image](https://github.com/user-attachments/assets/107cd794-6cb1-425a-8ef9-77943a43bae9)
+1. **Initialize WebDriver**: The project uses Selenium with ChromeDriver to open a Chrome browser session and navigate to the selected tournament page on livescore.com; <center>
+  <img src="https://github.com/user-attachments/assets/107cd794-6cb1-425a-8ef9-77943a43bae9" alt="image">
+</center>
 
 2. **Navigate to Tournament Page**: Once the tournament is selected via the GUI, Selenium directs the browser to the appropriate URL; ![image](https://github.com/user-attachments/assets/2345b9a9-4db8-43f7-a0f4-bfba64d5560e)
 ![image](https://github.com/user-attachments/assets/3dedb603-1338-4bfb-b986-367aef236c57)
